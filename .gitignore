@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 
 projectpass.txt
+mongoDB_demo.ipynb
 # C extensions
 *.so
 
