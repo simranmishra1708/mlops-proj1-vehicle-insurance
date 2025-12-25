@@ -5,13 +5,17 @@
 # logging.warning("This is a warning message from demo.py")
 # logging.error("This is an error message from demo.py")      
 
-from src.logger import logging
-from src.exception import MyException   
-import sys
+# from src.logger import logging
+# from src.exception import MyException   
+# import sys
 
-try:
-    a = 1 / 0
-except Exception as e:
-    logging.info(e)
-    raise MyException(e, sys) from e
+# try:
+#     a = 1 / 0
+# except Exception as e:
+#     logging.info(e)
+#     raise MyException(e, sys) from e
   
+
+from src.pipline.training_pipeline import TrainPipeline
+training_pipeline = TrainPipeline()
+training_pipeline.run_pipeline()
